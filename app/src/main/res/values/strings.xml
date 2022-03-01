@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RiverFront</string>
+
+    <string name="photo_portrait_ration" translatable="false">H,1:1</string>
+    <string name="photo_landscape_ration">H,4:2</string>
+    <string name="str_currency">Currency</string>
+    <string name="str_chat">Chat</string>
+    <string name="str_furama_riverfront_singapore">Furama Riverfront, Singapore</string>
+</resources>

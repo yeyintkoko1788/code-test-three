@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/furama_1"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="@string/photo_landscape_ration"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duluxe Twin"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:fontFamily="@font/rv_medium"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_3x"
+        android:layout_below="@+id/layout_photo"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_feature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_toStartOf="@+id/btn_view_rate"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="twin soingle bed"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/text_regular" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_view_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_photo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@drawable/btn_red_border"
+        android:fontFamily="@font/rv_regular"
+        android:paddingStart="@dimen/margin_medium_2"
+        android:paddingEnd="@dimen/margin_medium_2"
+        android:text="View Rates"
+        android:textColor="@color/color_pink"
+        android:textSize="@dimen/text_regular" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_price_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_view_rate"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:fontFamily="@font/rv_medium"
+        android:text="Avg. Nighly/Room Form"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2x"
+        app:fontFamily="@font/rv_regular" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sgd 140.23"
+        app:fontFamily="@font/rv_medium"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:fontFamily="@font/rv_medium"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_3x"
+        android:layout_below="@+id/btn_view_rate"
+        android:layout_alignParentEnd="true"/>
+
+
+</RelativeLayout>
